@@ -25,12 +25,15 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
 
   useEffect(() => {
     setTheme(colorScheme || 'light');
-    SystemUI.setBackgroundColorAsync(theme === 'dark' ? '#000000' : '#FFFFFF');
+    SystemUI.setBackgroundColorAsync(colorScheme === 'dark' ? '#000000' : '#FFFFFF');
   }, [colorScheme]);
 
   const toggleTheme = () => {
-    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
-    SystemUI.setBackgroundColorAsync(theme === 'light' ? '#000000' : '#FFFFFF');
+    setTheme(prevTheme => {
+      const newTheme = prevTheme === 'light' ? 'dark' : 'light';
+      SystemUI.setBackgroundColorAsync(newTheme === 'dark' ? '#000000' : '#FFFFFF');
+      return newTheme;
+    });
   };
 
   return (
