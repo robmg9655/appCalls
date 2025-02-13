@@ -1,4 +1,5 @@
 import camio1 from "@/assets/images/Camio1.jpg";
+import avatar from "@/assets/images/avatar.png";
 import camions from "@/assets/images/Camions.jpg";
 import camions1 from "@/assets/images/Camions1.jpg";
 import chainsaw from "@/assets/images/chainsaw.png";
@@ -18,6 +19,7 @@ import container from "@/assets/images/Container.png";
 
 export default {
   camio1,
+  avatar,
   camions,
   camions1,
   chainsaw,

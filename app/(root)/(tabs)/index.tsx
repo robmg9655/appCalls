@@ -1,20 +1,23 @@
-import { View, Text} from 'react-native';
-import { Link } from 'expo-router';
+import { View, Text, Image } from "react-native";
+import { Link } from "expo-router";
+import { SafeAreaView } from "react-native-safe-area-context";
+import images from "@/constants/images";
+import icons from "@/constants/icons";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
-        <Text className='font-bold my-10 font-NimbusSanL text-3xl'>Calls Forestal!!!!!!!</Text>
-        <Link href="/sign-in">Sign In</Link>
-        <Link href="/calendar">Calendar</Link>
-        <Link href="/profile">Profile</Link>
-        <Link href="/properties/1">Property</Link>
+    <SafeAreaView className="bg-black h-full">
+      <View className="px-5">
+        <View className="flex flex-row items-center justify-between mt-5">
+          <View className="flex flex-row items-center">
+            <Image source={images.avatar} className="size-12 rounded-full"/>
+            <View className="flex flex-col items-start ml-2 justify-center">
+              <Text className="text-xs font-NimbusSanL text-accent-200">Good Morning</Text>
+              <Text className="text-base font-NimbusSanL-bold text-accent-100">Pepito</Text>
+            </View>
+          </View>
+        </View>
       </View>
+    </SafeAreaView>
   );
 }
