@@ -15,7 +15,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/logocalls.png",
         "backgroundColor": "#000000"
-      }
+      },
+      "package": "com.robgm.AppCalls"
     },
     "web": {
       "bundler": "metro",
@@ -28,9 +29,20 @@
         "expo-splash-screen",
         {
           "image": "./assets/images/logocalls.png",
-          "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#000000",
+          "enableFullScreenImage_legacy": true
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/NimbusSanL-Bol.ttf",
+            "./assets/fonts/NimbusSanL-Reg.ttf",
+            "./assets/fonts/NimbusSanL-RegIta.ttf",
+            "./assets/fonts/NimbusSanL-BolIta.ttf"
+          ]
         }
       ]
     ],

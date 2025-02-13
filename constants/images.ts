@@ -14,6 +14,7 @@ import trimming from "@/assets/images/trimming.png";
 import truck from "@/assets/images/truck.png";
 import volcar from "@/assets/images/volcar.jpg";
 import work from "@/assets/images/work.jpg";
+import container from "@/assets/images/Container.png";
 
 export default {
   camio1,
@@ -32,4 +33,5 @@ export default {
   truck,
   volcar,
   work,
+  container,
 };
