@@ -82,7 +82,7 @@ export const settings = [
   },
   {
     title: "Settings",
-    icon: icons.infoIcon,
+    icon: icons.infoSquareIcon,
   },
 ];
 
