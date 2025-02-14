@@ -28,8 +28,8 @@ const Card = ({ title, location, time, image, onPress }: CardProps) => {
             <Image source={image} className="w-full h-36 rounded-lg" resizeMode="contain" />
             <View className="mt-2">
                 <Text className="text-lg font-NimbusSanL-Bold text-black" numberOfLines={1}>{title}</Text>
-                <Text className="text-sm font-NimbusSanL-Bold text-black-300">{location}</Text>
-                <Text className="text-primary-100 font-NimbusSanL-Bold mt-1">TEMPS: {time}</Text>
+                <Text className="text-sm font-NimbusSanL-Bold text-black">{location}</Text>
+                <Text className="text-lg text-primary-100 font-NimbusSanL-Bold mt-1">TEMPS: {time}</Text>
             </View>
         </TouchableOpacity>
     );
@@ -38,7 +38,7 @@ const Card = ({ title, location, time, image, onPress }: CardProps) => {
 const Grid = () => {
     return (
         <SafeAreaView style={{ flex: 1 }}>
-            <View style={{ position: 'absolute', top: 0, left: 0, right: 0, zIndex: 1, backgroundColor: 'black', paddingVertical: 10 }}>
+            <View style={{ position: 'absolute', top: 0, left: 0, right: 0, zIndex: 1, backgroundColor: 'black' }}>
                 <Filter />
             </View>
             <FlatList
@@ -46,7 +46,7 @@ const Grid = () => {
                 keyExtractor={(item) => item.id.toString()}
                 numColumns={2}
                 columnWrapperStyle={{ justifyContent: "space-between" }}
-                contentContainerStyle={{ padding: 10, paddingTop: 90, paddingBottom: 100 }}
+                contentContainerStyle={{ padding: 10, paddingTop: 80, paddingBottom: 100 }}
                 renderItem={({ item }) => (
                     <Card title={item.title} location={item.location} time={item.time} image={item.image} />
                 )}

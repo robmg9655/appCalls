@@ -29,9 +29,8 @@
         "expo-splash-screen",
         {
           "image": "./assets/images/logocalls.png",
-          "resizeMode": "contain",
-          "backgroundColor": "#000000",
-          "enableFullScreenImage_legacy": true
+          "imageWidth": 200,
+          "backgroundColor": "#000000"
         }
       ],
       [
