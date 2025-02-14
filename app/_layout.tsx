@@ -1,4 +1,5 @@
 import { SplashScreen, Stack } from "expo-router";
+import { View } from "react-native";
 
 import "./globals.css";
 import { useFonts } from "expo-font";
@@ -22,8 +23,10 @@ export default function RootLayout() {
   if (!fontsLoaded) return null;
 
   return (
-    <GlobalProvider>
-      <Stack screenOptions={{ headerShown: false }} />
-    </GlobalProvider>
+    <View style={{ flex: 1, backgroundColor: "black" }}>
+      <GlobalProvider>
+        <Stack screenOptions={{ headerShown: false }} />
+      </GlobalProvider>
+    </View>
   );
 }
