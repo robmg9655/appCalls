@@ -15,8 +15,8 @@ const Filter = () => {
     return (
         <ScrollView horizontal showsHorizontalScrollIndicator={false} className="mt-3 mb-2">
             {categories.map((item, index) => (
-                <TouchableOpacity onPress={() => handleCategoryPress(item.category)} className={`flex flex-col items-start mx-4 mr-4 px-4 py-2 rounded-full ${selectedCategory == item.category ? 'bg-primary-100' : 'bg-black-100 border-2 border-accent-100'}`} key={index}>
-                    <Text className="text-lg text-accent-100">{item.title}</Text>
+                <TouchableOpacity onPress={() => handleCategoryPress(item.category)} className={`flex flex-col items-start mx-4 mr-4 px-4 py-2 rounded-full ${selectedCategory == item.category ? 'bg-primary-100 border-2 border-accent-100' : 'bg-black-100 border-2 border-accent-200'}`} key={index}>
+                    <Text className={`text-sm ${selectedCategory == item.category ? 'text-accent-100 font-NimbusSanL-Bold scale-110' : 'text-black-300 font-NimbusSanL scale-90'}`}>{item.title}</Text>
                 </TouchableOpacity>
             ))} 
         </ScrollView>
