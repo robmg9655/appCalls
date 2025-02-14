@@ -22,6 +22,8 @@ import sendIcon from "@/assets/icons/Send.png";
 import shieldIcon from "@/assets/icons/Shield.png";
 import editPhotoIcon from "@/assets/icons/editPhoto.png";
 import arrowRightIcon from "@/assets/icons/arrowRight.png";
+import searchIcon from "@/assets/icons/Search.png";
+import filterIcon from "@/assets/icons/filter.png";
 
 export default {
     arrowLeftIcon,
@@ -47,4 +49,6 @@ export default {
     logoutIcon,
     editPhotoIcon,
     arrowRightIcon,
+    searchIcon,
+    filterIcon,
 };

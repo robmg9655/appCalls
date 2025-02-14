@@ -36,25 +36,6 @@ export const cards = [
   },
 ];
 
-export const featuredCards = [
-  {
-    title: "Featured 1",
-    location: "Location 1",
-    price: "$100",
-    rating: 4.8,
-    image: images.chainsaw,
-    category: "house",
-  },
-  {
-    title: "Featured 2",
-    location: "Location 2",
-    price: "$200",
-    rating: 3,
-    image: images.sawmill,
-    category: "flat",
-  },
-];
-
 export const categories = [
   { title: "All", category: "All" },
   { title: "Tala", category: "Tala" },

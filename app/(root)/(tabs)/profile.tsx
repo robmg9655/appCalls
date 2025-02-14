@@ -1,7 +1,6 @@
 import {View, Text, SafeAreaView, ScrollView, Image, TouchableOpacity, ImageSourcePropType, Alert} from 'react-native';
 import React from 'react';
 import icons from '@/constants/icons';
-import images from '@/constants/images';
 import { useGlobalContext } from '@/lib/global-provider';
 import { logout } from '@/lib/appwrite';
 
